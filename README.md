@@ -2,6 +2,8 @@
 
 A small, static romantic page made with the three photos from `/home/dr3/Documents/us`.
 
+Live site: <https://vox-cyber.github.io/for-sreelakshmi/>
+
 ## Run it locally
 
 From this directory, run:
