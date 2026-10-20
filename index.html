@@ -21,6 +21,7 @@
     <div class="page-glow page-glow--one" aria-hidden="true"></div>
     <div class="page-glow page-glow--two" aria-hidden="true"></div>
     <div class="floating-hearts" aria-hidden="true"></div>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Back to the beginning">
@@ -69,8 +70,11 @@
         <div class="hero-visual reveal reveal--delay">
           <div class="hero-orbit hero-orbit--one" aria-hidden="true"></div>
           <div class="hero-orbit hero-orbit--two" aria-hidden="true"></div>
+          <div class="hero-moon" aria-hidden="true"><span>♡</span></div>
+          <div class="hero-sparkles" aria-hidden="true"><span>✦</span><span>·</span><span>✧</span></div>
           <div class="hero-photo-wrap">
-            <img src="assets/us-sky.jpg" alt="A quiet view of us together" />
+            <img src="assets/us-sky.jpg" alt="A quiet view of us together" width="720" height="1569" fetchpriority="high" />
+            <div class="photo-glint" aria-hidden="true"></div>
             <div class="photo-note photo-note--top">my favorite view</div>
             <div class="photo-note photo-note--bottom">♡ always us</div>
           </div>
@@ -119,15 +123,15 @@
         </div>
         <div class="photo-grid">
           <figure class="memory memory--large reveal">
-            <div class="memory-image"><img src="assets/us-selfie.jpg" alt="A smiling selfie of us" loading="lazy" /></div>
+            <div class="memory-image"><img src="assets/us-selfie.jpg" alt="A smiling selfie of us" width="2592" height="1944" loading="lazy" decoding="async" /></div>
             <figcaption><span>01</span><strong>my favorite smile</strong></figcaption>
           </figure>
           <figure class="memory memory--tall reveal reveal--delay">
-            <div class="memory-image"><img src="assets/us-tree.jpg" alt="Us together under a tree" loading="lazy" /></div>
+            <div class="memory-image"><img src="assets/us-tree.jpg" alt="Us together under a tree" width="720" height="1569" loading="lazy" decoding="async" /></div>
             <figcaption><span>02</span><strong>my favorite place</strong></figcaption>
           </figure>
           <figure class="memory memory--wide reveal reveal--delay-two">
-            <div class="memory-image"><img src="assets/us-sky.jpg" alt="Us together under a wide open sky" loading="lazy" /></div>
+            <div class="memory-image"><img src="assets/us-sky.jpg" alt="Us together under a wide open sky" width="720" height="1569" loading="lazy" decoding="async" /></div>
             <figcaption><span>03</span><strong>my favorite view</strong></figcaption>
           </figure>
         </div>
@@ -169,8 +173,8 @@
             being exactly who you are. I hope you know that you are loved —
             loudly, quietly, on ordinary days, and in every moment in between.
           </p>
-          <button class="button button--light" id="loveButton" type="button">tap for a little more love <span>♡</span></button>
-          <p class="hidden-love" id="hiddenLove" aria-live="polite">I love you more than this little page could ever hold. ♡</p>
+          <button class="button button--light" id="loveButton" type="button" aria-controls="hiddenLove" aria-expanded="false">tap for a little more love <span>♡</span></button>
+          <p class="hidden-love" id="hiddenLove" aria-live="polite" aria-hidden="true">I love you more than this little page could ever hold. ♡</p>
           <div class="letter-signoff">always yours <span>♡</span></div>
         </div>
       </section>
